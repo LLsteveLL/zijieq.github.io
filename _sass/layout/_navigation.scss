@@ -210,10 +210,12 @@
 
     li {
       display: block;
+      margin-left: 1rem; // Add consistent spacing between items
 
       &:first-child {
-        font-weight: bold;
+        font-weight: 700; // Keep title bold
         margin-right: auto; // Push other items to the right
+        margin-left: 0; // No left margin for title
         text-wrap: wrap;
 
         a {
@@ -225,6 +227,10 @@
         a {
           margin-right: 0;
         }
+      }
+
+      a {
+        font-weight: normal; // Ensure links are not bold
       }
     }
 
